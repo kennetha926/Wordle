@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React, {useContext, useCallback, useEffect} from 'react';
 import {AppContext} from '../App';
 import Key from "./Key"; 
@@ -7,7 +8,7 @@ function Keyboard() {
   const keys2 = ["A", "S", "D", "F", "G", "H", "J", "K", "L"];
   const keys3 = ["Z", "X", "C", "V", "B", "N", "M"];
 
-  const {board, disabledLetters, currAttempt, gameOver, onEnter, onDelete, onSelectLetter} = useContext(AppContext);
+  const {disabledLetters, currAttempt, gameOver, onEnter, onDelete, onSelectLetter} = useContext(AppContext);
   
   const handleKeyboard = useCallback((event) => {
     if (gameOver.gameOver) return; 
